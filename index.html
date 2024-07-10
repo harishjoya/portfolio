@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- this is the design of navbar-->
+    <header>
+
+        <nav class="navbar">
+            <div class="logo">Harish's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href ="#about">About</a></li>
+                <li><a href="#services" >Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- this is the design of main content-->
+    <main>
+        <section id="home">
+            <div class="text-first">
+                <h4>Hello! My name is</h4>
+                <h1>Harish Joya</h1>
+                <h4>And i am a Web Developer.</h4><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia laboriosam eaque dolore
+                doloribus cum fugiat consequuntur, ratione porro illo aspernatur et magni suscipit? Eum odit quia repudiandae quaerat officiis?</p><br><br>
+                <div class="logos">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div><br><br>
+                <span class="download-cv">
+                    <a href="#"> Download CV</a>
+                </span>
+            </div>
+            <div class="profile-photo" style="background-image: url('harish.png')">
+                
+            </div>
+        </section>
+        <hr>
+
+        <section id="about">
+            <div class="profile-photo1" style="background-image: url('harish.png')">
+            </div>
+            <div class="text-second">
+                <h2>About Me</h2>
+                <h4>Frontend Developer</h4>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe at consequuntur velit esse sapiente dolore, nulla quis cumque laboriosam praesentium dolorem odio quidem aut aliquam incidunt voluptatem dolores repellat ipsa?
+                Labore accusantium odio fugiat recusandae maxime neque facere facilis, ex quasi doloremque voluptatem quas illo ea cumque possimus ipsa in vel natus at. Quod illo tempore nulla officia fugit ullam.</p><br><br>
+                <span class="download-cv">
+                    Read More
+                </span>
+            </div>
+        </section>
+        <hr>
+
+        <section id="services">
+            <span>My Services</span>
+            <div class="text-third">
+                <div>
+                    <span><i class="fa-solid fa-computer"></i></span>
+                    <h2>C/C++ Programming</h2><br><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium veniam, molestias suscipit deserunt, debitis quam omnis dolores culpa minus fugit nam, quos iure sit sapiente eveniet nostrum adipisci. Sed, autem.</p><br><br>
+                    <span class="read-more">
+                        Read More
+                    </span>
+                </div>
+                <div>
+                    <span><i class="fa-solid fa-code"></i></span>
+                    <h2>Web Developement</h2><br><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium veniam, molestias suscipit deserunt, debitis quam omnis dolores culpa minus fugit nam, quos iure sit sapiente eveniet nostrum adipisci. Sed, autem.</p><br><br>
+                    <span class="read-more">
+                        Read More
+                    </span>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section id="projects">
+            <span>Latest Projects</span>
+            <div class="text-fourth1">
+                <h2>Netflix Clone</h2>
+                <h2>Amazon Clone</h2>
+                <h2>Weather Website</h2>
+            </div>
+            <div class="text-fourth">
+                <div class="prj" style="background-image: url('netflix.png.jpg')">
+                    
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+                <div class="prj" style="background-image: url('amazon.png.jpg')">
+                    
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+                <div class="prj" style="background-image: url('weather.png.jpg')">
+                    
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section id="contact">
+            <span>Contact Me</span>
+            <div class="text-fifth">
+                <div class="fifth-input1">
+                    <input type="text" placeholder="Full Name:">
+                    <input type="text" placeholder="Email Address:">
+                </div>
+                <div class="fifth-input1">
+                    <input type="text" placeholder="Mobile Number:">
+                    <input type="text" placeholder="Email Subject:">
+                </div>
+                <div class="fifth-input2">
+                    <input type="text" placeholder="Your Message:">
+                </div>
+                <div class="send-msg">
+                    Send Message
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="backToTop" title="Back to top">Back To Top &uarr;</button>
+    <!-- this is the design of footer-->
+     <footer>
+        <div class="footer">
+            Copyright   <i class="fa-regular fa-copyright"></i>  2024 by @Harish | All Right Reserved
+        </div>
+     </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('active');
+        });
+        });
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.onscroll = function() {
+    scrollFunction();
+};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+            } else {
+             backToTopButton.style.display = "none";
+            }
+        }
+
+        backToTopButton.addEventListener('click', () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+
+</body>
+</html>
